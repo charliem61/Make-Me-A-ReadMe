@@ -49,8 +49,8 @@ function MyReadMe() {
         name: "githublink",
       },  {
         type: "input",
-        message: "What is your project title?",
-        name: "projectTitle",
+        message: "Where can someone email you for additional questions about this project?",
+        name: "userEmail",
       },  {
         type: "input",
         message: "What is your project title?",
@@ -119,4 +119,31 @@ function MyReadMe() {
 // 
 
 //TODO:
+// ORDER OF QUESTIONS AND LAYOUT OF README
 //
+// TITLE OF PROJECT
+//
+// SECTIONS:
+//          DESCRIPTION
+//          TABLE OF CONTENTS
+//          INSTALLATION
+//          USAGE
+//          LICENSE
+//          CONTRIBUTING
+//          TESTS
+//          QUESTIONS?
+//
+// GITHUB USERNAME
+//
+// LINK TO GITHUB PROFILE
+//
+// USER EMAIL
+//
+// WHEN EMAIL IS ENTERED, IT IS ADDED TO SECTION
+// NAMED "QUESTIONS", WITH INSTRUCTIONS ON HOW TO 
+// REACH ME WITH ADDITIONAL QUESTIONS ABOUT THE 
+// PROJECT
+//
+// LINKS WILL BE DISPLAYED IN THE TABLE OF CONTENTS
+// THEN, THEY WILL TAKE YOU TO A CORRESPONDING SECTION
+// OF THE README
