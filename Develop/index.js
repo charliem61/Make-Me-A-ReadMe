@@ -10,6 +10,9 @@ function MyReadMe() {
       message: "What is your project title?",
       name: "projectTitle",
     },
+      //PROPERTY OR KEY OR PROPERTY NAME- TYPE: 
+      // "INPUT"-VALUE
+
     {
       type: "input",
       message: "Write a brief decription of your completed project.",
@@ -55,18 +58,26 @@ function MyReadMe() {
         type: "input",
         message: "What is your project title?",
         name: "projectTitle",
-      },  {
-        type: "input",
-        message: "What is your project title?",
-        name: "projectTitle",
-      },
+      } 
+  ]).then(function (answers) {
+    var readmeOutput = `
+      this is my github link: ${answers.githublink}
+      this is my github username: ${answers.githubUsername}
+      Project Title: ${answers.projectTitle}
+      Desrciption of Project: ${answers.projectDescription}
+    `;
+
+    // instead of console log, save/write to a file
+    // use fs to save/write to file
+    console.log(readmeOutput)
+  })
+
+ 
 
 
-
-
-  ]);
 }
 
+MyReadMe()
 
 
 
@@ -88,20 +99,20 @@ function MyReadMe() {
 //TODO:
 // LICENSE: WATCH LICENSE, SHEILDING, 
 // IT IS A OBJECT WITH A ARRAY 
-{
-    type: "list",
-    name: "license",
-    message: "Chose the appropriate license for this project: ",
-    choices: [
-        "Apache",
-        "Academic",
-        "GNU",
-        "ISC",
-        "MIT",
-        "Mozilla",
-        "Open"
-    ]
-},
+// {
+//     type: "list",
+//     name: "license",
+//     message: "Chose the appropriate license for this project: ",
+//     choices: [
+//         "Apache",
+//         "Academic",
+//         "GNU",
+//         "ISC",
+//         "MIT",
+//         "Mozilla",
+//         "Open"
+//     ]
+// },
 
 //TODO:
 //CONTRIBUTING:WHO WORKED ON THE PROJECT
@@ -147,3 +158,4 @@ function MyReadMe() {
 // LINKS WILL BE DISPLAYED IN THE TABLE OF CONTENTS
 // THEN, THEY WILL TAKE YOU TO A CORRESPONDING SECTION
 // OF THE README
+
