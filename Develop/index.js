@@ -20,7 +20,7 @@ function MyReadMe() {
     },
     {
       type: "input",
-      message: "How can I install you project if needed?",
+      message: "How can I install your project if needed?",
       name: "projectInstall",
     },
     {
@@ -58,15 +58,17 @@ function MyReadMe() {
         type: "input",
         message: "What is your project title?",
         name: "projectTitle",
-      } 
+      }
   ]).then(function (answers) {
     var readmeOutput = `
-      Please provide a link to your Github: ${answers.githublink}
-      What is your Github Username: ${answers.githubUsername}
-      Project Title: ${answers.projectTitle}
-      Desrciption of Project: ${answers.projectDescription}
       What is your project Title: ${answers.projectTitle}
+      Desrciption of Project: ${answers.projectDescription}
+      How can I install your project if needed? ${answers.projectInstall}
+      Please choose your appropriate license? ${answers.projectLicenseChoice}
       Were there any other contributers on this project: ${answers.projectContributers}
+      What is your Github Username: ${answers.githubUsername}
+      Please provide a link to your Github: ${answers.githublink}
+      Project Title: ${answers.projectTitle}
       Where can someone reach out to you for additional questions: ${answers.userEmail}
     `;
 
@@ -74,17 +76,9 @@ function MyReadMe() {
     // use fs to save/write to file
     console.log(readmeOutput)
   })
-
- 
-
-
 }
 
 MyReadMe()
-
-
-
-
 
 //TODO: 
 // ask for title DONE
