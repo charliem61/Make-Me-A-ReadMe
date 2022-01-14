@@ -61,10 +61,13 @@ function MyReadMe() {
       } 
   ]).then(function (answers) {
     var readmeOutput = `
-      this is my github link: ${answers.githublink}
-      this is my github username: ${answers.githubUsername}
+      Please provide a link to your Github: ${answers.githublink}
+      What is your Github Username: ${answers.githubUsername}
       Project Title: ${answers.projectTitle}
       Desrciption of Project: ${answers.projectDescription}
+      What is your project Title: ${answers.projectTitle}
+      Were there any other contributers on this project: ${answers.projectContributers}
+      Where can someone reach out to you for additional questions: ${answers.userEmail}
     `;
 
     // instead of console log, save/write to a file
