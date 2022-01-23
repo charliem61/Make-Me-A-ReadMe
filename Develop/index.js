@@ -1,4 +1,4 @@
-// TODO: Include packages needed for this application
+
 
 const inquirer = require("inquirer");
 const fs = require("fs");
@@ -123,7 +123,7 @@ function MyReadMe() {
 
       // instead of console log, save/write to a file
       // use fs to save/write to file
-      
+
       console.log(readmeOutput);
       fs.writeFile("README.md", readmeOutput, "utf8", function () {
         console.log("filewritten");
@@ -132,84 +132,3 @@ function MyReadMe() {
 }
 
 MyReadMe();
-
-//DONE
-//TODO:
-// ask for title DONE
-
-//DONE
-//TODO:
-// ASK USER FOR BRIEF DESCRIPTION OF PROJECT
-
-//DONE
-//TODO:
-// INSTALLTION: WHAT YOU HAVE TO DO TO USE CREATE
-// THE READ ME
-
-//DONE = PURPOSE
-//TODO:
-// USAGE: WHAT THE READ ME WILL BE USED FOR
-
-//TODO:
-// LICENSE: WATCH LICENSE, SHEILDING,
-// IT IS A OBJECT WITH A ARRAY
-// {
-//     type: "list",
-//     name: "license",
-//     message: "Chose the appropriate license for this project: ",
-//     choices: [
-//         "Apache",
-//         "Academic",
-//         "GNU",
-//         "ISC",
-//         "MIT",
-//         "Mozilla",
-//         "Open"
-//     ]
-// },
-
-//DONE
-//TODO:
-//CONTRIBUTING:WHO WORKED ON THE PROJECT
-
-//TODO:
-//TEST: LOOK INTO THIS
-
-//TODO:
-// GIT HUB USER NAME:
-// WHEN GIT HUB USERNAME IS ENETERED, THEN THIS
-// IS ADDED TO THE SECTION OF THE README ENTITLED
-// QUESTIONS WITH A LINK TO MY GITHUB PROFILE
-
-//TODO:
-//
-
-//TODO:
-// ORDER OF QUESTIONS AND LAYOUT OF README
-//
-// TITLE OF PROJECT
-//
-// SECTIONS:
-//          DESCRIPTION
-//          TABLE OF CONTENTS
-//          INSTALLATION
-//          USAGE
-//          LICENSE
-//          CONTRIBUTING
-//          TESTS
-//          QUESTIONS?
-//
-// GITHUB USERNAME
-//
-// LINK TO GITHUB PROFILE
-//
-// USER EMAIL
-//
-// WHEN EMAIL IS ENTERED, IT IS ADDED TO SECTION
-// NAMED "QUESTIONS", WITH INSTRUCTIONS ON HOW TO
-// REACH ME WITH ADDITIONAL QUESTIONS ABOUT THE
-// PROJECT
-//
-// LINKS WILL BE DISPLAYED IN THE TABLE OF CONTENTS
-// THEN, THEY WILL TAKE YOU TO A CORRESPONDING SECTION
-// OF THE README
