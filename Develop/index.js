@@ -90,33 +90,33 @@ function MyReadMe() {
       var readmeOutput = `
 
     ## Project Title
-    # <${answers.projectTitle}>
+    # ${answers.projectTitle}
 
     ## Description
-    # <${answers.projectDescription}>
+    # ${answers.projectDescription}
 
     ## Table of Contents (Optional)
 
-    # <${answers.projectTableofContents}>
+    # ${answers.projectTableofContents}
 
     ## Installation
-    # <${answers.projectInstall}>
+    # ${answers.projectInstall}
 
     ## Usage
-    # <${answers.projectUsage}>
+    # ${answers.projectUsage}
     
     ## Credits
-    # <${answers.projectContributers}>
+    # ${answers.projectContributers}
     
     ## License
 
-    # <${answers.projectLicenseChoice}>
+    # ${answers.projectLicenseChoice}
     
     ## Features
-    # <${answers.projectFeatures}>
+    # ${answers.projectFeatures}
 
     ## How to Contribute
-    # <${answers.howToContribute}>
+    # ${answers.howToContribute}
     
     `;
 

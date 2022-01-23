@@ -1,32 +1,32 @@
 
 
     ## Project Title
-    # <Weather App>
+    # Make-Me-A-ReadMe
 
     ## Description
-    # <Using an outside API, local weather data is pulled and applied to the app to show the user current weather for that area based in real time.>
+    # When the user needs a new README.md file created for their final touch to end their project, they can simply use the Make-Me-A-ReadMe app using node and npm inquirer to generater their read me using the prompts asked in node.
 
     ## Table of Contents (Optional)
 
-    # <undefined>
+    # undefined
 
     ## Installation
-    # <npmI.lo and click on install Weather App button>
+    # Ensure first that node is installed in the file. You should see node_modules.If not, run npm i in terminal to install node. Then open index.js filed into intergrated terminal, then enter node index.js and this will run the prompts to start the process of your soon to be created new Read me to finish up your new project.
 
     ## Usage
-    # <Follow this link to see video of this app in use. notreallink.lo>
+    # N/A
     
     ## Credits
-    # <Me, myself, and I>
+    # Me, Myself, and I
     
     ## License
 
-    # <Apache>
+    # Apache
     
     ## Features
-    # <Weather data, real time tracker, visual data of weather for use area.>
+    # Creating an organized, well formatted readme for the users project, out of following simple prompts using the node terminal.
 
     ## How to Contribute
-    # <https://github.com/charliem61/Make-Me-A-ReadMe>
+    # https://github.com/charliem61/Make-Me-A-ReadMe
     
     
