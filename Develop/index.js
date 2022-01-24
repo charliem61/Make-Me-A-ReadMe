@@ -1,7 +1,7 @@
-
-
 const inquirer = require("inquirer");
 const fs = require("fs");
+const generateMarkdown = require('./utils/generateMarkdown')
+
 
 function MyReadMe() {
   inquirer
@@ -85,50 +85,14 @@ function MyReadMe() {
       },
     ])
 
-    .then(function (answers) {
-
-      var readmeOutput = `
-
-    ## Project Title
-    # ${answers.projectTitle}
-
-    ## Description
-    # ${answers.projectDescription}
-
-    ## Table of Contents (Optional)
-
-    # ${answers.projectTableofContents}
-
-    ## Installation
-    # ${answers.projectInstall}
-
-    ## Usage
-    # ${answers.projectUsage}
-    
-    ## Credits
-    # ${answers.projectContributers}
-    
-    ## License
-
-    # ${answers.projectLicenseChoice}
-    
-    ## Features
-    # ${answers.projectFeatures}
-
-    ## How to Contribute
-    # ${answers.howToContribute}
-    
-    `;
-
+  .then((answers) => fs.writeFileSync('./utils/README.md',generateMarkdown(answers)))}
+  
+MyReadMe();
 
       // instead of console log, save/write to a file
       // use fs to save/write to file
 
-      console.log(readmeOutput);
-      fs.writeFile("README.md", readmeOutput, "utf8", function () {
-        console.log("filewritten");
-      });
-    });
-}
-
-MyReadMe();
+      //console.log(readmeOutput);
+      // fs.writeFile("./README.md", readmeOutput(answers),
+      //(err) => err ? console.error(err) : console.log("success!")) 
+      //  ;

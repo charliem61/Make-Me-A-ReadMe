@@ -1,14 +1,12 @@
-function generateMarkdown(answers) { 
-  
-return `
+
 
 ## Project Title
      
-${answers.projectTitle}
+dsfaaf
 
 ## Description
 
-${answers.projectDescription}
+fdasdfa
 
 ## Table of Contents
 - [Description](#description)
@@ -21,30 +19,25 @@ ${answers.projectDescription}
 
 ## Installation
 
-${answers.projectInstall}
+fdas
 
 ## Usage
 
-${answers.projectUsage}
+faddfa
 
 ## Credits
 
-${answers.projectContributers}
+afsds
 
 ## License
 
-${answers.projectLicenseChoice}
+Apache
 
 ## Features
 
-${answers.projectFeatures}
+af
 
 ## How to Contribute
 
-${answers.howToContribute}
+fafa
 
-`
-}
-
-
-module.exports = generateMarkdown;
