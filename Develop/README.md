@@ -1,7 +1,7 @@
 MAKE-ME-A-README
 
-Repo Link:
-Live Url: 
+Repo Link:https://github.com/charliem61/Make-Me-A-ReadMe
+Live Url: https://charliem61.github.io/Make-Me-A-ReadMe/
 
 Goal/Motivation:
 
@@ -12,7 +12,7 @@ Goal/Motivation:
 
 Problems Solved:
 
-          Once the node terminal is started in the integrated terminal under index.js, the README created by the user will then genrate. Once you right click on user created README the README will then be formatted to 
+          Once the node terminal is started in the integrated terminal under index.js, the README created by the user will then genrate. Then right click and hit open preview. 
 
 The Standouts:
 
